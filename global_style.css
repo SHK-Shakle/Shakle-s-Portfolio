@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url(fonts/comfortaa/Comfortaa-Light.ttf);
+}
+
+
 :root {
     /* Floats */
     --panel-radius: 16px;
@@ -6,6 +12,8 @@
     --body-background-color: #ffc0cb;
 
     --panel-background-color: #ffffff;
+
+    --default-text-color: #FFFFFF;
 }
 
 
@@ -17,6 +25,8 @@ body {
     /* DO NOT FUCKING TOUCH, this centers the body. */
     min-height: 100vh;
     margin: 0;
+    font-family: Comfortaa;
+    color: var(--default-text-color);
 }
 
 .maincontent-container {
