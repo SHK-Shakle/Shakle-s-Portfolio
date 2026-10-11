@@ -1,0 +1,38 @@
+:root {
+    /* Floats */
+    --panel-radius: 16px;
+
+    /* Colors */
+    --body-background-color: #ffc0cb;
+
+    --panel-background-color: #ffffff;
+}
+
+
+body {
+    background-color: var(--body-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* DO NOT FUCKING TOUCH, this centers the body. */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.maincontent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--panel-background-color);
+    border-radius: var(--panel-radius);
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    min-width: 512px;
+    min-height: 512px;
+
+    max-width: 512px;
+    max-height: 512px;
+}
