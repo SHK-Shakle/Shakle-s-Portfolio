@@ -61,9 +61,9 @@ body {
 
 .artworks-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-
+    align-items: center;
     background-color: var(--panel-background-color);
     
     margin-left: auto;
@@ -73,10 +73,49 @@ body {
 
     min-width: 80%;
 
-    min-height: 512px;
+    min-height: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
     /* max-height: 512px; */
     /* margin: 12px; */
     padding: 24px;
+}
+
+.artworks-vbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.artwork {
+    width: calc(25% - 12px);
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid var(--default-border-color);
+    padding: 8px;
+    padding-bottom: 0px;
+
+    img {
+        
+        width: 100%;
+        display: block;
+        border-radius: 12px;
+        border: 2px solid var(--default-border-color);
+        
+    }
+    p {
+        background-color: var(--purple-blended-panel-background-color);
+        margin-top: 8px;
+        font-size: 16px;
+        color: var(--text-color);
+        border-radius: 12px;
+        border: 2px solid var(--default-border-color);
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
 }
 
 .maincontent-container_redirect-buttons {
